@@ -7,7 +7,7 @@ payload = {
     "password": "1234567890"
     }
 
-class MyUser(FastHttpUser):
+class DemoBlazeTest(FastHttpUser):
 
     @task()
     def homePage(self):
