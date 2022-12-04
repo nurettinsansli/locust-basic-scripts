@@ -9,14 +9,14 @@ payload = {
 
 class DemoBlazeTest(FastHttpUser):
 
-    @task()
+    @task(1)
     def homePage(self):
         self.client.get("/",name="HomePage")
 
-    @task()
+    @task(1)
     def selectProduct(self):
         self.client.get("/prod.html?idp_=1",name="Listing")
 
-    @task()
+    @task(2)
     def login(self):
         self.client.post(url, name="login",json=payload)
